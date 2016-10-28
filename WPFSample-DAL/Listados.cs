@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WPFSample_Ent;
 
 namespace WPFSample_DAL
 {
-    public class Class1
+    class Listados
     {
+        Persona personita = new Persona();
     }
 }

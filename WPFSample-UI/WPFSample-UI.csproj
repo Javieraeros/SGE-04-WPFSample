@@ -137,6 +137,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <None Include="Properties\PublishProfiles\WPFSample-UI.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -151,6 +152,16 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WPFSample-BL\WPFSample-BL.csproj">
+      <Project>{b4872d8a-27f3-438e-b2e3-1edc1cf39481}</Project>
+      <Name>WPFSample-BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPFSample-Ent\WPFSample-Ent.csproj">
+      <Project>{b53502cf-44f0-4618-9647-f4aa3e3c7773}</Project>
+      <Name>WPFSample-Ent</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

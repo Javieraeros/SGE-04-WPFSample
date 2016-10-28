@@ -5,6 +5,25 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFSample-UI", "WPFSample-UI\WPFSample-UI.csproj", "{90619C67-B921-4AA7-89E1-BBE2AB8973CF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{7458DDD0-F955-4604-BB98-9AA8952BE0E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{C4DBF5A3-E9EA-4E36-99FA-7BD41FCB808F}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{27BA8242-7C7F-4AB2-889A-8E8EBDDC7616}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\WPFSample-UI.json = PublishScripts\Templates\WPFSample-UI.json
+		PublishScripts\Templates\WPFSample-UI.param.dev.json = PublishScripts\Templates\WPFSample-UI.param.dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFSample-BL", "WPFSample-BL\WPFSample-BL.csproj", "{B4872D8A-27F3-438E-B2E3-1EDC1CF39481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFSample-DAL", "WPFSample-DAL\WPFSample-DAL.csproj", "{CAF9B9F4-4420-440B-AC83-A110C653551A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFSample-Ent", "WPFSample-Ent\WPFSample-Ent.csproj", "{B53502CF-44F0-4618-9647-F4AA3E3C7773}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +34,24 @@ Global
 		{90619C67-B921-4AA7-89E1-BBE2AB8973CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90619C67-B921-4AA7-89E1-BBE2AB8973CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90619C67-B921-4AA7-89E1-BBE2AB8973CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4872D8A-27F3-438E-B2E3-1EDC1CF39481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4872D8A-27F3-438E-B2E3-1EDC1CF39481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4872D8A-27F3-438E-B2E3-1EDC1CF39481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4872D8A-27F3-438E-B2E3-1EDC1CF39481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF9B9F4-4420-440B-AC83-A110C653551A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF9B9F4-4420-440B-AC83-A110C653551A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF9B9F4-4420-440B-AC83-A110C653551A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF9B9F4-4420-440B-AC83-A110C653551A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53502CF-44F0-4618-9647-F4AA3E3C7773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53502CF-44F0-4618-9647-F4AA3E3C7773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53502CF-44F0-4618-9647-F4AA3E3C7773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53502CF-44F0-4618-9647-F4AA3E3C7773}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C4DBF5A3-E9EA-4E36-99FA-7BD41FCB808F} = {7458DDD0-F955-4604-BB98-9AA8952BE0E4}
+		{27BA8242-7C7F-4AB2-889A-8E8EBDDC7616} = {7458DDD0-F955-4604-BB98-9AA8952BE0E4}
 	EndGlobalSection
 EndGlobal
