@@ -9,6 +9,11 @@ namespace WPFSample_DAL
 {
     class Listados
     {
-        Persona personita = new Persona();
+        public List<Persona> listadoPersonas()
+        {
+            List<Persona> devolver=new List<Persona>();
+
+            return devolver;
+        }
     }
 }
