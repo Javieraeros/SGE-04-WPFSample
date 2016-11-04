@@ -40,8 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dbConnection.cs" />
-    <Compile Include="Listados.cs" />
+    <Compile Include="Conexion\MyConnection.cs" />
+    <Compile Include="Listados\ListadosDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +49,9 @@
       <Project>{b53502cf-44f0-4618-9647-f4aa3e3c7773}</Project>
       <Name>WPFSample-Ent</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Manejadoras\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
