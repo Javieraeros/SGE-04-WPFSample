@@ -35,11 +35,10 @@ namespace WPFSample_DAL
 
         public MyConnection()
         {
-            this.host = "192.168.0.161";
+            //this.host = "192.168.0.161";
+            this.host = "localhost";
             this.dataBase = "WPFSample";
-            //El primer usuario es de de la base de datos del instituto, el segundo la de casa
             this.user = "prueba";
-            //this.user = "pruebaResident";
             this.pass = "123";
 
 
