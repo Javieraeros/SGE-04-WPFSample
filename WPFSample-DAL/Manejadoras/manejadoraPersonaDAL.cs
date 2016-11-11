@@ -21,7 +21,7 @@ namespace WPFSample_DAL.Manejadoras
         /// </summary>
         /// <param name="persona"></param>
         /// <returns></returns>
-		public int insertPersonaDAL(Persona persona){
+		/*public int insertPersonaDAL(Persona persona){
 			int i;
 			try{
 				miCon.openConnection();
@@ -38,6 +38,6 @@ namespace WPFSample_DAL.Manejadoras
 				miCon.closeConnection();
 			}
 			return i;
-		}
+		}*/
 	}
 }

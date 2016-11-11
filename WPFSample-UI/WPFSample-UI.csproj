@@ -121,9 +121,7 @@
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
-    <None Include="Properties\PublishProfiles\Javier.pubxml" />
-    <None Include="Properties\PublishProfiles\WPFSample-UI20161107115911 - Web Deploy %282%29.pubxml" />
-    <None Include="Properties\PublishProfiles\WPFSample-UI20161107115911 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\wpfsample2 - Web Deploy.pubxml" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -146,7 +144,6 @@
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
-    <None Include="Properties\PublishProfiles\WPFSample-UI.pubxml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
