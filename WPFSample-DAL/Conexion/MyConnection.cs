@@ -36,10 +36,12 @@ namespace WPFSample_DAL
         public MyConnection()
         {
             //this.host = "192.168.0.161";
-            this.host = "localhost";
+            //this.host = "localhost";
+            this.host = "iesnervion.database.windows.net";
             this.dataBase = "WPFSample";
             this.user = "prueba";
-            this.pass = "123";
+            //this.pass = "123";
+            this.pass = "iesnervion123.";
 
 
         }
