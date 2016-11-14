@@ -53,5 +53,38 @@ namespace WPFSample_UI.Controllers
             miMane.deletePersonaBL(id);
             return View("Index",miLista.listadoPersonasBL());
         }
+
+        public ActionResult Edit(int id)
+        {
+            Persona p = new Persona();
+            //No me gusta :(
+            foreach (Persona pn in new ListadosBL().listadoPersonasBL())
+            {
+                if (pn.id == id)
+                {
+                    p.Nombre = pn.Nombre;
+                    p.Apellidos = pn.Apellidos;
+                    p.FechaNac = pn.FechaNac;
+                    p.telefono = pn.telefono;
+                    p.direccion = pn.direccion;
+                }
+            }
+            return View(p);
+        }
+        [HttpPost]
+        public ActionResult Edit(Persona persona)
+        {
+            manejadoraPersonaBL miMane = new manejadoraPersonaBL();
+            miMane.updatePersonaBL(persona);
+
+            return View("Index",new ListadosBL().listadoPersonasBL());
+        }
+
+        public ActionResult Details(int id)
+        {
+            manejadoraPersonaBL miMane = new manejadoraPersonaBL();
+            Persona p = miMane.selectPersonaBL(id);
+            return View(p);
+        }
     }
 }

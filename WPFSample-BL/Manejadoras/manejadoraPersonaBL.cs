@@ -21,5 +21,17 @@ namespace WPFSample_BL.Manejadoras
             manejadoraPersonaDAL miManejadora = new manejadoraPersonaDAL();
             return miManejadora.deletePersonaDAL(id);
         }
+
+        public int updatePersonaBL(Persona persona)
+        {
+            manejadoraPersonaDAL miManejadora = new manejadoraPersonaDAL();
+            return miManejadora.updatePersonaDAL(persona);
+        }
+
+        public Persona selectPersonaBL(int id)
+        {
+            manejadoraPersonaDAL miManejadora = new manejadoraPersonaDAL();
+            return miManejadora.selectPersonaDAL(id);
+        }
     }
 }

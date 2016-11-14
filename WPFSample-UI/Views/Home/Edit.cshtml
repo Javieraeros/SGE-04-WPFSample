@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
+    <title>Edit</title>
 </head>
 <body>
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
@@ -17,7 +17,7 @@
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     
     
-    @using (Html.BeginForm()) 
+    @using (Html.BeginForm())
     {
         @Html.AntiForgeryToken()
         
@@ -49,6 +49,8 @@
                 </div>
             </div>
     
+            @Html.HiddenFor(model => model.id)
+    
             <div class="form-group">
                 @Html.LabelFor(model => model.telefono, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
@@ -67,7 +69,7 @@
     
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Create" class="btn btn-default" />
+                    <input type="submit" value="Save" class="btn btn-default" />
                 </div>
             </div>
         </div>
