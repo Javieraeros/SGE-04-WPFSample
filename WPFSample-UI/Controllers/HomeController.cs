@@ -42,7 +42,10 @@ namespace WPFSample_UI.Controllers
 
         public ActionResult Delete(int id)
         {
-            return View("Delete");
+            Persona p = new Persona();
+            manejadoraPersonaBL miMane = new manejadoraPersonaBL();
+            p=miMane.selectPersonaBL(id);
+            return View("Delete",p);
         }
 
         [HttpPost,ActionName("Delete")]
@@ -57,18 +60,9 @@ namespace WPFSample_UI.Controllers
         public ActionResult Edit(int id)
         {
             Persona p = new Persona();
-            //No me gusta :(
-            foreach (Persona pn in new ListadosBL().listadoPersonasBL())
-            {
-                if (pn.id == id)
-                {
-                    p.Nombre = pn.Nombre;
-                    p.Apellidos = pn.Apellidos;
-                    p.FechaNac = pn.FechaNac;
-                    p.telefono = pn.telefono;
-                    p.direccion = pn.direccion;
-                }
-            }
+            manejadoraPersonaBL miMane = new manejadoraPersonaBL();
+            p = miMane.selectPersonaBL(id);
+            
             return View(p);
         }
         [HttpPost]

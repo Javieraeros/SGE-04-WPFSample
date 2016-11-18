@@ -12,7 +12,7 @@ namespace WPFSample_Ent
         [Required]
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
-        [DisplayFormat(ApplyFormatInEditMode =true,DataFormatString ="{0:yyyy/MM/dd}")]
+        [DisplayFormat(ApplyFormatInEditMode =true,DataFormatString ="{0:d}")]
         public DateTime FechaNac { get; set; }
 
         public int id { get; set; }
