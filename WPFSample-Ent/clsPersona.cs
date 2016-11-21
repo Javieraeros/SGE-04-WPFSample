@@ -9,14 +9,16 @@ namespace WPFSample_Ent
 {
     public class Persona
     {
-        [Required]
+        public int id { get; set; }
+        [Required,MaxLength(20)]
         public string Nombre { get; set; }
+        [MaxLength(50)]
         public string Apellidos { get; set; }
         [DisplayFormat(ApplyFormatInEditMode =true,DataFormatString ="{0:d}")]
         public DateTime FechaNac { get; set; }
-
-        public int id { get; set; }
+        [MaxLength(10)]
         public string telefono { get; set; }
+        [MaxLength(100)]
         public string direccion { get; set; }
 
         public Persona(){

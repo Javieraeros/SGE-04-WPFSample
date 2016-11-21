@@ -10,6 +10,11 @@ namespace WPFSample_BL.Manejadoras
 {
     public class manejadoraPersonaBL
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="persona"></param>
+        /// <returns></returns>
         public int insertPersonaBL(Persona persona)
         {
             manejadoraPersonaDAL miManejadora = new manejadoraPersonaDAL();

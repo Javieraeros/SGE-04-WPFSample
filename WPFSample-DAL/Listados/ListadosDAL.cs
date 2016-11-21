@@ -10,6 +10,11 @@ namespace WPFSample_DAL
 {
     public class ListadosDAL
     {
+        /// <summary>
+        /// Devuelve un listado de personas de la base de datos, o lanza una excepción en caso de que 
+        /// la conexión falle, o algo bloquee la tabla personas
+        /// </summary>
+        /// <returns></returns>
         public List<Persona> listadoPersonas()
         {
             Persona miPer;
