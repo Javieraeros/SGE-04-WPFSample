@@ -46,8 +46,7 @@ namespace WPFSample_UI.Controllers
             {
                 manejadoraPersonaBL miMane = new manejadoraPersonaBL();
                 miMane.insertPersonaBL(persona);
-                ListadosBL lista = new ListadosBL();
-                return View("Index",lista.listadoPersonasBL());
+                return RedirectToAction("Index");
             }
             
         }
@@ -74,9 +73,8 @@ namespace WPFSample_UI.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             manejadoraPersonaBL miMane = new manejadoraPersonaBL();
-            ListadosBL miLista = new ListadosBL();
             miMane.deletePersonaBL(id);
-            return View("Index",miLista.listadoPersonasBL());
+            return RedirectToAction("Index");
         }
 
         /// <summary>
@@ -111,7 +109,7 @@ namespace WPFSample_UI.Controllers
 
             }
 
-            return View("Index",new ListadosBL().listadoPersonasBL());
+            return RedirectToAction("Index");
         }
 
         /// <summary>

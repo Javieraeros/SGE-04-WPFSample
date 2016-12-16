@@ -37,7 +37,7 @@ namespace WPFSample_DAL
         {
             //this.host = "192.168.0.161";
             //this.host = "localhost";
-            this.host = "iesnervion.database.windows.net";
+            this.host = "WPFsamplejavi.database.windows.net";
             this.dataBase = "WPFSample";
             this.user = "prueba";
             //this.pass = "123";
